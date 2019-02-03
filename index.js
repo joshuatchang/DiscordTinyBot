@@ -23,6 +23,8 @@ bot.on("message", async message =>{
   if(cmd === `${prefix}hello`){
     return message.channel.send("Hello!");
   }
+  if(cmd === `${prefix}help`) return (message.channel.send("I can't do much right now :disappointed:"))
+  else return message.channel.send("@" + message.author + "\n ERROR, command not recognized.")
 
 });
 
